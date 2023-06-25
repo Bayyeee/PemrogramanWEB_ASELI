@@ -37,26 +37,19 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <form class="user" action="" method="POST">
+                                    <form class="user" action="{{route('simpan-gambar')}}" method="POST" enctype="multipart/form-data">
                                         {{ csrf_field() }}
                                         <div class="form-group">
-                                                <input type="file" class="form-control form-control-user" name="gambar" id="gambar">
+                                            <input type="file" class="form-control form-control-user" name="gambar" id="gambar">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" name="nama" id="nama" placeholder="Nama foto">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Submit
                                         </button>
                                         <hr>
                                     </form>
-                                    {{-- @foreach ($usr as $item) --}}
-                                        {{-- <tr> --}}
-                                            {{-- <td>
-                                                <img height="100px" width="70px"
-                                                src="{{asset('gambar/' . $item->foto )}}"></td>
-                                            <td>{{ $item->name }}</td>
-                                            <td>{{ $item->email }}</td> --}}
-                                            {{-- <td><a href="{{url('ubah-pengguna', $item->id)}}"><i class="fa-solid fa-pen-to-square"></i></a> | <a href="{{url('delete-data/'. $item->id)}}"><i class="fa-solid fa-trash" style="color: red"></i></a> </td> --}}
-                                        {{-- </tr> --}}
-                                    {{-- @endforeach --}}
                                 </table>
                             </div>
                         </div>

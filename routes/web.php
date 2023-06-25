@@ -45,6 +45,6 @@ Route::group(['middleware' => ['auth','ceklevel:admin,mahasiswa']], function () 
 
     Route::get('/upload', [GambarController::class, 'gambar'])->name('upload');
 
-
+    Route::post('/simpan-gambar', [GambarController::class, 'store'])->name('simpan-gambar');
 
 });

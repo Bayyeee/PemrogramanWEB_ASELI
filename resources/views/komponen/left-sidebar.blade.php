@@ -38,7 +38,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
 
                 <a class="collapse-item" href="{{url('data-pengguna')}}">Data Pengguna</a>
-                <a class="collapse-item" href="{{url('upload')}}">Upload Foto</a>
+                {{-- <a class="collapse-item" href="{{url('upload')}}">Upload Foto</a> --}}
                 <a class="collapse-item" href="cards.html">Cards</a>
             </div>
         </div>
@@ -57,10 +57,7 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                <a class="collapse-item" href="utilities-border.html">Borders</a>
-                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                <a class="collapse-item" href="utilities-other.html">Other</a>
+                <a class="collapse-item" href="{{url('upload')}}">Upload Foto</a>
             </div>
         </div>
     </li>

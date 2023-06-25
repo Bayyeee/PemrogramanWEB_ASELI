@@ -47,7 +47,7 @@
                                         <tr>
                                             <td>
                                                 <img height="100px" width="70px"
-                                                src="{{asset('gambar/' . $item->foto )}}"></td>
+                                                src="{{asset('img/' . $item->foto )}}"></td>
                                             <td>{{ $item->name }}</td>
                                             <td>{{ $item->email }}</td>
                                             <td><a href="{{url('ubah-pengguna', $item->id)}}"><i class="fa-solid fa-pen-to-square"></i></a> | <a href="{{url('delete-data/'. $item->id)}}"><i class="fa-solid fa-trash" style="color: red"></i></a> </td>
@@ -65,7 +65,6 @@
                         <a href="{{url('/')}}">&larr; Back to Dashboard</a>
                     </div>
                     @endif --}}
-
 
                 </div>
                 <!-- /.container-fluid -->
@@ -88,7 +87,7 @@
 
     <!-- Bootstrap core JavaScript-->
     @include('komponen.script')
-    
+
     @include('sweetalert::alert')
 </body>
 
