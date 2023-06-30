@@ -22,7 +22,7 @@ class UserController extends Controller
             $usr = User::all();
             return view('Data.data-pengguna', compact('usr'));
         }
-        return view('home');
+        return view('notFound');
     }
 
     // UNTUK EDIT DATA PENGGUNA -> HANYA BISA DIAKSES OLEH ADMIN
